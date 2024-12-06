@@ -128,12 +128,12 @@ export default function PuterChat() {
 
   const handleCopyChat = () => {
     const chatContent = chatContainerRef.current?.innerText;
-    if (chatContent) {
-      navigator.clipboard
-        .writeText(chatContent)
-        .then(() => alert('Chat copied to clipboard!'))
-        .catch((err) => console.error('Failed to copy: ', err));
-    }
+    // if (chatContent) {
+    //   navigator.clipboard
+    //     .writeText(chatContent)
+    //     .then(() => alert('Chat copied to clipboard!'))
+    //     .catch((err) => console.error('Failed to copy: ', err));
+    // }
     setIsCopied(true);
     setCopyHover(false);
 
