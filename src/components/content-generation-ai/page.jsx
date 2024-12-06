@@ -485,7 +485,7 @@ const handleRegenerateWithCategoryAndKeyword = async () => {
                 <div className='ai-dashboard-title-input'>
                   <input type="text" id="ai-title" value={stripHtmlTags(formattedTitle)} readOnly />
                   <div className="refresh-title-button" onClick={() => handleRestructureClick('title')}>
-                    <Image src={refresh2} height={12} alt='refresh'/>
+                    <Image src={refresh2} height={12} />
                   </div>
                 </div>
               </div>
@@ -587,7 +587,7 @@ const handleRegenerateWithCategoryAndKeyword = async () => {
             </div>
             <div className="chat-action-buttons">
               <div className="copy-chat-button">
-                <Image src={copy}  height={14} onClick={handleCopyChat} alt='copy'/>
+                <Image src={copy}  height={14} onClick={handleCopyChat} />
                 <div className="chat-button-label">
                   {isCopied && (
                     <div className="chat-button-label-copied">Copied</div>
@@ -595,10 +595,10 @@ const handleRegenerateWithCategoryAndKeyword = async () => {
                 </div>
               </div>
               <div className="download-chat-button">
-                <Image src={download} height={14}    onClick={() => formattedTitle && handleDownloadChat()} alt='download'/>
+                <Image src={download} height={14}    onClick={() => formattedTitle && handleDownloadChat()} />
               </div>
               <div className="refresh-chat-button">
-                <Image src={refresh} height={13} onClick={handleRefreshChat} alt='refresh'/>
+                <Image src={refresh} height={13} onClick={handleRefreshChat} />
               </div>
             </div>
           </div>
@@ -617,7 +617,7 @@ const handleRegenerateWithCategoryAndKeyword = async () => {
             />
             <div className='chat-input-generate-button' onClick={handleSendMessage} style={{ backgroundColor: buttonHl ?  '#414abb' : '#515bda'  }}>
               <p>Generate</p>
-              <Image src={prfecBtn} alt='prfec'/>
+              <Image src={prfecBtn}/>
             </div>
             {/* <div style={{ display: 'flex', alignItems: 'center',marginTop:"2px" }} >
               <Image  width={24} height={24} src={buttonHl ? Hover : NoHover}  alt="Button Icon" onClick={handleSendMessage}/>
