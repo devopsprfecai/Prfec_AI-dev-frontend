@@ -57,11 +57,11 @@
   font-size: 12px;
   line-height: 150%;
   font-family: var(--p-font);
-  padding-top: 12px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.2rem;
+  text-align: center;
 }
 /* .email .MuiOutlinedInput-root {
   &.Mui-error {
