@@ -348,7 +348,7 @@ const Login = () => {
             console.log(actionCodeSettings)
 
             // Call the backend to send the sign-in link
-            await axios.post('http://localhost:5000/api/sendSignInEmail', {
+            await axios.post('https://prfec-ai-website-backend-development-repo.vercel.app/api/sendSignInEmail', {
                 email,
                 link: actionCodeSettings.url,
             });
